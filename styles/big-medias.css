@@ -1,0 +1,130 @@
+@media (min-width: 992px) {
+  header {
+    width: 100vw;
+  }
+
+  div.headerContainer {
+    max-width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.25rem 8rem !important;
+    gap: 1rem;
+  }
+
+  div.headerContainer img:first-child {
+    max-width: 9.5rem;
+  }
+
+  div.headerContainer div#btnMenu {
+    display: none;
+    visibility: hidden;
+  }
+
+  div.headerContainer menu,
+  div.headerContainer menu.active {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div.headerContainer menu ul {
+    width: 31.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+  div.headerContainer menu div.icons {
+    flex-direction: row;
+    max-width: 15rem;
+  }
+
+  div.headerContainer menu div.icons div.search {
+    width: 17.3125rem;
+    flex-direction: row;
+  }
+
+  div.headerContainer menu div.icons div.search input {
+    width: max(100%, 6rem);
+    text-align: justify;
+  }
+
+
+
+
+  /* SECTION 1 STYLES */
+  main {
+    padding: 3rem 10.3125rem 1.25rem 10.3125rem;
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  section.first_section div.images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+
+  section.first_section div.images div.sides {
+    gap: 1.875rem;
+  }
+
+  section.first_section div.images div.sides img:nth-child(2) {
+    display: inline;
+    visibility: visible;
+  }
+
+  /* SECTION 2 STYLES */
+
+  section div.products {
+    width: 50rem;
+  }
+
+  section div.products div.productsImages {
+    flex-direction: row;
+    flex: 1;
+    gap: 2.875rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  section div.products div.productsImages a div:hover {
+    border: 2px solid rgba(178, 173, 173, 0.5);
+    transform: scale(1.05);
+  }
+
+
+
+
+  /* FOOTER STYLES */
+
+  footer {
+    width: max(100vw, 1100px)
+  }
+
+
+  footer div.footerContainer div.showcaseInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem;
+  }
+
+  footer div.footerContainer div.showcaseInfo div div.footerIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer div.footerContainer div.showcaseInfo div div.footerIcons:nth-child(2) {
+    width: 21.75rem;
+  }
+}
